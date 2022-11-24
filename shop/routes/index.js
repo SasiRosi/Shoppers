@@ -19,5 +19,10 @@ router.get('/login', function(req, res, next) {
 router.get('/register', function(req, res, next) {
   res.render('register', { title: 'JustDoShop' });
 });
+router.get('/account', function(req, res, next) {
+  res.render('account', { title: 'JustDoShop' });
+});
+
+
 
 module.exports = router;

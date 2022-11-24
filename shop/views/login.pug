@@ -6,24 +6,13 @@ block content
     p Welcome to Login #{title}
     a(href='/') index
 
-  h2 Login Form
-  form(action='/action_page.php' method='post')
-  .imgcontainer
-    img.avatar(src='public/images/user.png' alt='Avatar')
-  .container
-    label(for='uname')
-      b Username
-    input(type='text' placeholder='Enter Username' name='uname' required='')
-    label(for='psw')
-      b Password
-    input(type='password' placeholder='Enter Password' name='psw' required='')
-    button(type='submit') Login
-    label
-      input(type='checkbox' checked='checked' name='remember')
-      |  Remember me
-  .container(style='background-color:#f1f1f1')
-    button.cancelbtn(type='button') Cancel
-    span.psw
-      | Forgot 
-      a(href='#') password?
+    
+    h2 Login Form
+    form( method='post', action='/account')
+
+      
+      input(type='text' placeholder='Enter Username' name='uname' required='')
+      
+      input(type='password' placeholder='Enter Password' name='psw' required='')
+      button(type='submit') Login
 

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+     div Ecco gli utenti
+
+         each user in users
+            h1
+                a(href=`/account/users/${user.email}`) #{user.name}
+
+
+
+

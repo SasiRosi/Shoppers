@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div
+    h1= title
+    a(href='/') index
+
+
+
+    h1 carica file
+    if fileName!=null
+     div.alert-success File #{FileName} caricato con successo
+    form( method='post', action='/account/upload', enctype="multipart/form-data")
+        
+        input(type='file' , value='Enter File' name='filetoupload')
+
+        button(type='submit') Upload

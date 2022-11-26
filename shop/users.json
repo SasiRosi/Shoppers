@@ -1,0 +1,28 @@
+[
+    {
+        "name":"Bob",
+        "surname":"Bobbers",
+        "email":"bb@gmail.com"
+    },
+    {
+        "name":"Rob",
+        "surname":"Robbers",
+        "email":"rr@gmail.com"
+    },
+    {
+        "name":"Sob",
+        "surname":"Sobbers",
+        "email":"ss@gmail.com"
+    },
+    {
+        "name":"Pob",
+        "surname":"Pobbers",
+        "email":"pp@gmail.com"
+    },
+    {
+        "name":"Fob",
+        "surname":"Fobbers",
+        "email":"ff@gmail.com"
+    }
+
+]

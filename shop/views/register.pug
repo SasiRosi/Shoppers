@@ -1,7 +1,23 @@
 extends layout
 
 block content
-  div
+  
+   div
     h1= title
     p Welcome to Register #{title}
     a(href='/') index
+
+    
+    h2 Register Form
+    form( method='post')
+
+      
+      input(type='text' placeholder='Enter Name' name='uname')
+      input(type='text' placeholder='Enter Surname' name='usurname')
+      input(type='text' placeholder='Enter email' name='uemail')
+
+      
+      input(type='password' placeholder='Enter Password' name='psw')
+      input(type='password' placeholder='Enter Password Again' name='rpsw')
+      button(type='submit') Registrati
+

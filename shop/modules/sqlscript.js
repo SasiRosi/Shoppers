@@ -6,14 +6,22 @@ const mysql= require('mysql');
 
 const connection = mysql.createConnection({
     host:'localhost',
-    user: 'prova',
+    user: 'root',
     password:'Enzuccio1?',
-    database:'prova'
-
+    database:'shops'
 });
  
-function executeQuery (sql, callback) {
-    connection.connect();
-    connection.query(sql,callback);
-    connection.end();
+function executeQuery (sql,params,callback) {
+    connection.connect(function err(){
+        if(err){
+            console.log(err+"errore");
+        }
+        else{
+            console.log("connected");
+        }
+    });
+    
+    connection.query(sql,params,callback);
+   // connection.end();
+
 }
